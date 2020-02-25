@@ -8,6 +8,8 @@ import { CommonModule } from '@angular/common';
 import { RechercheComponent } from './connecter/recherche/recherche.component';
 import { AjouteComponent } from './connecter/ajoute/ajoute.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 const appRoutes: Routes = [
   {path: 'connecter',
  component:ConnecterComponent},
@@ -25,7 +27,7 @@ const appRoutes: Routes = [
 
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],ReactiveFormsModule,
   declarations: [ AppComponent, ConnecterComponent, RechercheComponent, AjouteComponent ],
   bootstrap:    [ AppComponent ]
 })
