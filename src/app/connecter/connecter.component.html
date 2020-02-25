@@ -1,2 +1,9 @@
-<h2>user<input></h2>
-<button name="valide">valide</button>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+
+
+<h2>username<input type="text" formControlName="username"></h2>
+<button name="valide" type="submit">valide</button>
+
+</form>
+
+<pre>{{ loginForm.value | json }}</pre>
