@@ -8,15 +8,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./connecter.component.css']
 })
 export class ConnecterComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-export class LoginFormComponent implements OnInit {
   loginForm: FormGroup;
 
   constructor(private fb: FormBuilder) { }
