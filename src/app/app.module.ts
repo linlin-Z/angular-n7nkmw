@@ -9,6 +9,7 @@ import { RechercheComponent } from './connecter/recherche/recherche.component';
 import { AjouteComponent } from './connecter/ajoute/ajoute.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { UserService } from './@shared/user.service';
 
 const appRoutes: Routes = [
   {path: 'connecter',
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule],
   declarations: [ AppComponent, ConnecterComponent, RechercheComponent, AjouteComponent ],
+  providers: [UserService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
